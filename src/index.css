@@ -9,8 +9,9 @@ body {
   font-family: 'Lexend' !important;
 
 }
-.hero-info {
+.hero-info { 
   margin-top: 13vh;
+  margin-bottom: 0vh;
 }
 /*hide the image*/
 @media (max-width: 992px) {

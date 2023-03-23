@@ -20,7 +20,7 @@ function Booking() {
           <div className='col-12 col-md-6 col-lg-4'>
             <p className='booking-text'>Pick-Up Location</p>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Select your car</option>
+              <option selected>Pick-Up Location</option>
               <option value="1">Mercedes</option>
               <option value="2">BMW</option>
               <option value="3">Mini</option>
@@ -29,7 +29,7 @@ function Booking() {
           <div className='col-12 col-md-6 col-lg-4'>
             <p className='booking-text'>Drop-Off Location</p>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Select your car</option>
+              <option selected>Drop-Off Location</option>
               <option value="1">Mercedes</option>
               <option value="2">BMW</option>
               <option value="3">Mini</option>
@@ -38,7 +38,7 @@ function Booking() {
           <div className='col-12 col-md-6 col-lg-4'>
             <p className='booking-text'>Departure Date</p>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Select your car</option>
+              <option selected>Departure Date</option>
               <option value="1">Mercedes</option>
               <option value="2">BMW</option>
               <option value="3">Mini</option>
@@ -47,7 +47,7 @@ function Booking() {
           <div className='col-12 col-md-6 col-lg-4'>
             <p className='booking-text'>Arrival Date</p>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Select your car</option>
+              <option selected>Arrival Date</option>
               <option value="1">Mercedes</option>
               <option value="2">BMW</option>
               <option value="3">Mini</option>

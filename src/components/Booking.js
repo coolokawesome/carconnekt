@@ -58,6 +58,7 @@ function Booking() {
           </div>
         </div>
       </div>
+      {/* {MODAL IS NEEDED HERE} */}
     </section>
   )
 }

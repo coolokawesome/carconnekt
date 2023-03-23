@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
-  background-color: rgb(249, 252, 255);
+  background-color: rgb(245, 245, 245);
 
 }
 .hero-info { 
@@ -20,10 +20,13 @@ body {
     height: 0px !important;
 }
   .hero-info {
-    margin-top: 20%;  }
+    margin-top: 20%;  
+  }
+  
 }
 .hero-container {
-  height: 100vh;
+  height: 90vh;
+  background-image: url('./components/images/HeroBg.png');
 }
 .booking-container {
   background-color: white;

@@ -3,7 +3,7 @@ import React from 'react'
 function Booking() {
   return (
     <section id='book'>
-      <div className='container'>
+      <div className='container booking-container p-5'>
         <div className='row'>
           <h3>Plan your trip</h3>
         </div>
@@ -54,7 +54,7 @@ function Booking() {
             </select>
           </div>
           <div className='col-12 col-md-6 col-lg-4'>
-            <button>Book Now</button>
+            <button className='col-12  btn btn-primary book-btn'>Book Now</button>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
+  background-color: rgb(249, 252, 255);
 
 }
 .hero-info { 
@@ -24,6 +25,15 @@ body {
 .hero-container {
   height: 100vh;
 }
+.booking-container {
+  background-color: white;
+  box-shadow: 4px 4px 15px rgb(221, 221, 221);
+  margin-bottom: 10vh;
+}
+.book-btn {
+  margin-top: 40px
+}
+
 h1 {
   font-family: 'Lexend';
   overflow-x: visible;

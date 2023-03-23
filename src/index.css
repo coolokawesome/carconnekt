@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('./components/fonts/LexendDeca-VariableFont_wght.ttf');
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lexend' !important;
+
+}
+.hero-info {
+  margin-top: 13vh;
+}
+/*hide the image*/
+@media (max-width: 992px) {
+  .hero-bg {
+    height: 0px !important;
+}
+  .hero-info {
+    margin-top: 20%;  }
+}
+.hero-container {
+  height: 100vh;
+}
+h1 {
+  font-family: 'Lexend';
+  overflow-x: visible;
+  font-weight: 600 !important;
+}
+.hero-img {
+  margin-top: 22vh;
+}

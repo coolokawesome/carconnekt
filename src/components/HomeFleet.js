@@ -12,7 +12,7 @@ function HomeFleet() {
     return (
         <>
         <div className='container text-center mb-5'>
-        <h3>Our Rentals</h3>
+        <h3>Our Top Rentals</h3>
         <p className='text-muted'>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure</p>
         <div className='row'>
         <div className='col-12 col-lg-3'>

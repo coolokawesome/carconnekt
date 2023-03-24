@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
   background-color: rgb(245, 245, 245);
+  overflow-x: hidden;
 
 }
 .hero-info { 
@@ -36,6 +37,9 @@ body {
 .book-btn {
   margin-top: 40px
 }
+.img {
+  overflow-x: hidden !important;
+}
 
 h1 {
   font-family: 'Lexend';
@@ -44,4 +48,11 @@ h1 {
 }
 .hero-img {
   margin-top: 22vh;
+}
+.special-text {
+  color: rgb(86, 180, 208);
+  text-decoration: none !important;
+}
+.display-3, .display-4, .display-5 {
+  font-family: 'Lexend' !important;
 }

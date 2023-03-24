@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Booking from './Booking'
 import HomeFleet from './HomeFleet'
+import WhyUs from './WhyUs'
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function Home() {
       </div>
     </div>
     <HomeFleet />
+    <WhyUs />
     </>
   )
 }

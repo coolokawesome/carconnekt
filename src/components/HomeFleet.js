@@ -46,9 +46,17 @@ function HomeFleet() {
                 <p className='col-6'>Year</p><p className='col-6'>{selectedCar.year}</p>
                 <p className='col-6'>Transmission</p><p className='col-6'>{selectedCar.transmission}</p>
                 <p className='col-6'>doors</p><p className='col-6'>{selectedCar.doors}</p>
+                <div className='col-12'><button>Reserve Now</button></div>
             </div>
          </div>
         </div>
+        
+        </div>
+        <div className='row my-5 bg-dark text-center'>
+                <div className='col-12 my-5'>
+                        <h2 className='text-light display-3'>Save big with Car Connekt</h2>
+                        <h4 className='text-light'>Cheapest rates. Local Suppliers. <a className='special-text'>24/7</a> support.</h4>
+                </div>
         </div>
         </>
     )

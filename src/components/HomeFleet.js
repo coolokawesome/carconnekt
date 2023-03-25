@@ -1,6 +1,5 @@
 import {useState, React} from 'react'
 import CarData from './Objects/Cars'
-import car1 from './images/tesla.png'
 
 function HomeFleet() {
     const [selectedCar, setSelectedCar] = useState(CarData[0])

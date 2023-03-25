@@ -16,23 +16,23 @@ function WhyUs() {
             <button className='btn'>{'Find out more >'}</button>
         </div>
         <div className='col-12 col-md-5 text-center text-lg-start'>
-            <div>
+            <div className='row'>
                 <div className='col-12 col-md-3'>img</div>
-                <div className='col-12 col-md-9'>
+                <div className='col-12 col-md-8 col-md-9'>
                     <h5>Cross Country Drive</h5>
                     <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
                 </div>
             </div>
-            <div>
+            <div className='row'>
                 <div className='col-12 col-md-3'>img</div>
-                <div className='col-12 col-md-9'>
+                <div className='col-12 col-md-8 col-md-9'>
                     <h5>Cross Country Drive</h5>
                     <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
                 </div>
             </div>
-            <div>
+            <div className='row'>
                 <div className='col-12 col-md-3'>img</div>
-                <div className='col-12 col-md-9'>
+                <div className='col-12 col-md-8 col-md-9'>
                     <h5>Cross Country Drive</h5>
                     <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
                 </div>

@@ -56,3 +56,6 @@ h1 {
 .display-3, .display-4, .display-5 {
   font-family: 'Lexend' !important;
 }
+.modal-dialog {
+  overflow-x: hidden !important;
+}

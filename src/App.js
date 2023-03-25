@@ -7,9 +7,12 @@ import About from './components/About';
 import Models from './components/Models';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Navbar bg="light" expand="lg">
         <div className='container'>
@@ -36,6 +39,8 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
+    <Footer />
+    </>
   );
 }
 

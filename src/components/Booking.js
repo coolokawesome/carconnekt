@@ -77,12 +77,24 @@ function Booking() {
     )
   }
 const handleModalFormSubmisson = e => {
-  if ((fname === null) || (lname === null) || (address === null ) || (postal === null) || (phone === null) || (email === null)) {
+  if 
+  ((fname === null) || 
+  (lname === null) || 
+  (address === null ) || 
+  (postal === null) || 
+  (phone === null) || 
+  (email === null)) {
     setFormError(
       true
     )
   }
-  if ((fname !== null) || (lname !== null) || (address !== null ) || (postal !== null) || (phone !== null) || (email !== null)) {
+  if 
+  ((fname !== null) || 
+  (lname !== null) || 
+  (address !== null ) || 
+  (postal !== null) || 
+  (phone !== null) || 
+  (email !== null)) {
     setShowModal(false)
     setSuccess(true)
   }
@@ -91,7 +103,12 @@ const handleModalFormSubmisson = e => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if ((carValue === null) || (pickupValue === null) || (dropoffValue === null) || (departureValue === null) || (arrivalValue === null)) {
+    if 
+    ((carValue === null) || 
+    (pickupValue === null) || 
+    (dropoffValue === null) || 
+    (departureValue === null) || 
+    (arrivalValue === null)) {
       setIsError(true)
     }
     else {
@@ -208,11 +225,9 @@ const handleModalFormSubmisson = e => {
               <Error />
               :
               <></>
-          }
-          {
+          }{
             success === true ? <div className='alert alert-success mt-2'>Success! please check your email <b>{email}</b> to confirm your reservation.</div> : <></>
-          }
-          {
+          }{
             showModal === false ? <Modal show={false}> </Modal> :
               <Modal show={true}
                 size='lg'>
@@ -225,7 +240,7 @@ const handleModalFormSubmisson = e => {
                 </Modal.Header>
 
                 <Modal.Body>
-                  <div >
+                  <div>
                     <div className='row'>
                       <div className='col-12 alert alert-info'>
                         <h3>Upon Registration you will recieve:</h3>
@@ -275,8 +290,7 @@ const handleModalFormSubmisson = e => {
                       </div>
                       <div className='col-12'>
                         <button className='col-12 btn btn-primary mt-3' onClick={handleModalFormSubmisson} >submit</button>
-                      </div>
-                      
+                      </div>    
                     </div>
                   </div>
                 </Modal.Body>

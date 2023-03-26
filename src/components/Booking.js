@@ -223,7 +223,7 @@ const handleModalFormSubmisson = e => {
           {
             isError === true ?
               <Error />
-              :
+                :
               <></>
           }{
             success === true ? <div className='alert alert-success mt-2'>Success! please check your email <b>{email}</b> to confirm your reservation.</div> : <></>
@@ -231,14 +231,12 @@ const handleModalFormSubmisson = e => {
             showModal === false ? <Modal show={false}> </Modal> :
               <Modal show={true}
                 size='lg'>
-
                 <Modal.Header className='row modal-header'>
                   <div className='row'>
                     <div className='col-11'><h3>Complete your Reservation</h3></div>
                     <button onClick={() => setShowModal(false)} className='col-1 btn btn-primary'>X</button>
                   </div>
                 </Modal.Header>
-
                 <Modal.Body>
                   <div>
                     <div className='row'>
@@ -260,46 +258,49 @@ const handleModalFormSubmisson = e => {
                         <img className='img img-fluid text-center' src={carImg}></img>
                       </div>
                     </div>
-                    <div className='row'>{
-                      formError === true ? <Error /> : <></>
-                    }
+                    <div className='row'>
+                      {
+                        formError === true ? 
+                          <Error /> 
+                            : 
+                          <></>
+                        }
                       <h3>Please enter your information:</h3>
-                      <div className='col-6'>
-                        <p>First Name: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>First Name: </p>
                         <input onChange={updateFirstName} required className='span input-group' placeholder='first name'></input>
                       </div>
-                      <div className='col-6'>
-                        <p>Last Name: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>Last Name: </p>
                         <input onChange={updateLastName} required className='span input-group' placeholder='last name'></input>
                       </div>
-                      <div className='col-6'>
-                        <p>Email: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>Email: </p>
                         <input onChange={updateEmail} required type='email' className='span input-group' placeholder='email'></input>
                       </div>
-                      <div className='col-6'>
-                        <p>Phone number: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>Phone number: </p>
                         <input onChange={updatePhone} required type='phone' className='span input-group' placeholder='phone number'></input>
                       </div>
-                      <div className='col-6'>
-                        <p>Address: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>Address: </p>
                         <input onChange={updateAddress} required type='address' className='span input-group' placeholder='phone number'></input>
                       </div>
-                      <div className='col-6'>
-                        <p>Postal Code: </p>
+                      <div className='col-6 mb-3'>
+                        <p className='my-auto'>Postal Code: </p>
                         <input onChange={updatePostal} required type='phone' maxLength='7' minLength='7' className='span input-group' placeholder='A1A 1A1'></input>
                       </div>
-                      <div className='col-12'>
+                      <div className='col-12 mb-3'>
                         <button className='col-12 btn btn-primary mt-3' onClick={handleModalFormSubmisson} >submit</button>
                       </div>    
                     </div>
                   </div>
                 </Modal.Body>
-                <Modal.Footer></Modal.Footer>
-              </Modal>
+              <Modal.Footer></Modal.Footer>
+            </Modal>
           }
         </div>
       </div>
-      {/* {MODAL IS NEEDED HERE} */}
     </section>
   )
 }

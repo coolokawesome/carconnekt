@@ -29,7 +29,7 @@ body {
     width: 0px !important
     }
     .app-container {
-      height: 80vh !important
+      height: 40vh !important
     }
   
 }
@@ -70,7 +70,6 @@ h1 {
 }
 
 .app-container {
-  height: 50vh !important;
   overflow: hidden;
 }
 .app-background-img {

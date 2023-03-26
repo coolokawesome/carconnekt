@@ -10,42 +10,42 @@ function HomeFleet() {
     }
     return (
         <>
-        <div className='container text-center mb-5'>
-        <h3>Our Top Rentals</h3>
-        <p className='text-muted'>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure</p>
+        <div className='container text-center mt-5 mb-5'>
+        <h3 className='display-5'>Our Top Rentals</h3>
+        <p className='text-muted mb-5'>Choose from a variety of our amazing vehicles to rent for your next business trip or adventure</p>
         <div className='row'>
-        <div className='col-12 col-lg-3'>
+        <div className='col-12 col-lg-3 '>
             <button onClick={() => configureCar(1)}
-                    className='car-btn col-12' id='car1'>Tesla Model 3</button>
+                    className='car-btn col-12 text-light' id='car1'>Tesla Model 3</button>
             <button onClick={() => configureCar(2)}
-                    className='car-btn col-12' id='car2'>Honda Accord</button>
+                    className='car-btn col-12 text-light' id='car2'>Honda Accord</button>
             <button onClick={() => configureCar(3)}
-                    className='car-btn col-12' id='car3'>Jeep Wrangler</button>
+                    className='car-btn col-12 text-light' id='car3'>Jeep Wrangler</button>
             <button onClick={() => configureCar(4)}
-                    className='car-btn col-12' id='car4'>Ford F-350</button>
+                    className='car-btn col-12 text-light' id='car4'>Ford F-350</button>
             <button onClick={() => configureCar(5)}
-                    className='car-btn col-12' id='car5'>Mini Cooper S</button>
+                    className='car-btn col-12 text-light' id='car5'>Mini Cooper S</button>
             <button onClick={() => configureCar(6)}
-                    className='car-btn col-12' id='car6'>Nissan Sentra</button>
+                    className='car-btn col-12 text-light' id='car6'>Nissan Sentra</button>
             <button onClick={() => configureCar(7)}
-                    className='car-btn col-12' id='car7'>Volkswagen Golf MK8</button>
+                    className='car-btn col-12 text-light' id='car7'>Volkswagen Golf MK8</button>
             <button onClick={() => configureCar(8)}
-                    className='car-btn col-12' id='car8'>Audi E-Tron</button>
+                    className='car-btn col-12 text-light' id='car8'>Audi E-Tron</button>
         </div>
         <div className='col-12 col-lg-6'> 
         <img src={selectedCar.images} className="img img-fluid"/>
         </div>
         <div className='col-12 col-lg-3'> 
-            <div>
-                <h4 id='carPrice'>${selectedCar.price} /day</h4>
+            <div className='row text-light price-container pt-2 pb-2'>
+                <h3 id='carPrice'>$<nobr className='car-price'>{selectedCar.price}</nobr>/day</h3>
             </div>
             <div className='info-box row'>
-                <p className='col-6'>Make</p><p className='col-6'>{selectedCar.make}</p>
-                <p className='col-6'>Model</p><p className='col-6'>{selectedCar.model}</p>
-                <p className='col-6'>Year</p><p className='col-6'>{selectedCar.year}</p>
-                <p className='col-6'>Transmission</p><p className='col-6'>{selectedCar.transmission}</p>
-                <p className='col-6'>doors</p><p className='col-6'>{selectedCar.doors}</p>
-                <div className='col-12'><button>Reserve Now</button></div>
+                <p className='col-6 text-start'>Make</p><p className='col-6 text-end'>{selectedCar.make}</p>
+                <p className='col-6 text-start'>Model</p><p className='col-6 text-end'>{selectedCar.model}</p>
+                <p className='col-6 text-start'>Year</p><p className='col-6 text-end'>{selectedCar.year}</p>
+                <p className='col-6 text-start'>Transmission</p><p className='col-6 text-end'>{selectedCar.transmission}</p>
+                <p className='col-6 text-start'>doors</p><p className='col-6 text-end'>{selectedCar.doors}</p>
+                <div className='col-12 '><button className='btn btn-primary px-0 mt-4 col-12 pt-2 reserve-btn pb-2' onclick='#book' >Reserve Now</button></div>
             </div>
          </div>
         </div>

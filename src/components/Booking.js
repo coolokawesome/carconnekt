@@ -13,12 +13,18 @@ function Booking() {
   const [showModal, setShowModal] = useState(false)
   const [carImg, setCarImg] = useState('')
   const [success, setSuccess] = useState(false)
+  const [fname, setFName] = useState(null)
+  const [lname, setLName] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [phone, setPhone] = useState(null)
+  const [address, setAddress] = useState(null)
+  const [postal, setPostal] = useState(null)
+  const [formError, setFormError] = useState(false)
 
   const updateCarValue = e => {
     setCarValue(
       e.target.value
     );
-
   }
   const updatePickupValue = e => {
     setPickupValue(
@@ -40,9 +46,47 @@ function Booking() {
       e.target.value
     );
   }
+  const updateFirstName = e => {
+    setFName(
+      e.target.value
+    )
+  }
+  const updateLastName = e => {
+    setLName(
+      e.target.value
+    )
+  }
+  const updatePhone = e => {
+    setPhone(
+      e.target.value
+    )
+  }
+  const updateAddress = e => {
+    setAddress(
+      e.target.value
+    )
+  }
+  const updateEmail = e => {
+    setEmail(
+      e.target.value
+    )
+  }
+  const updatePostal = e => {
+    setPostal(
+      e.target.value
+    )
+  }
 const handleModalFormSubmisson = e => {
-  setShowModal(false)
-  setSuccess(true)
+  if ((fname === null) || (lname === null) || (address === null ) || (postal === null) || (phone === null) || (email === null)) {
+    setFormError(
+      true
+    )
+  }
+  if ((fname !== null) || (lname !== null) || (address !== null ) || (postal !== null) || (phone !== null) || (email !== null)) {
+    setShowModal(false)
+    setSuccess(true)
+  }
+  
 }
 
   const handleSubmit = (e) => {
@@ -100,8 +144,8 @@ const handleModalFormSubmisson = e => {
         <div id='infocontainer'>
           <form onSubmit={handleSubmit}
             className='row'>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Select Your Car</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Select Your Car</p>
               <select id='car'
                 class="form-select"
                 aria-label="Select Car"
@@ -116,8 +160,8 @@ const handleModalFormSubmisson = e => {
                 <option value="Audi E-Tron">Audi E-Tron                </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Pick-Up Location</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Pick-Up Location</p>
               <select id='pickup'
                 class="form-select"
                 aria-label="Pickup location"
@@ -131,8 +175,8 @@ const handleModalFormSubmisson = e => {
                 <option value="Ottawa">Ottawa          </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Drop-Off Location</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Drop-Off Location</p>
               <select id='dropoff' class="form-select" aria-label="Drop-off location" placeholder='-- Dropoff Location --'
                 onChange={updateDropoffValue}>
                 <option value="Toronto">Toronto        </option>
@@ -143,20 +187,20 @@ const handleModalFormSubmisson = e => {
                 <option value="Ottawa">Ottawa          </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Departure Date</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Departure Date</p>
               <input value={this} id='departure' type='date' class="form-select" aria-label="Departure Date" placeholder='-- Departure Date --'
                 onChange={updateDepatureValue}>
               </input>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Arrival Date</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Arrival Date</p>
               <input id='arrival' type='date' class="form-select" aria-label="Arrival Date" placeholder='-- Arrival Date --'
                 onChange={updateArrivalValue}>
               </input>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <button type='submit' className='col-12  btn btn-primary book-btn'>Book Now</button>
+            <div className='col-12 col-md-6 col-lg-4 '>
+              <button type='submit' className='col-12 btn btn-primary book-btn'>Book Now</button>
             </div>
           </form>
           {
@@ -166,7 +210,7 @@ const handleModalFormSubmisson = e => {
               <></>
           }
           {
-            success === true ? <div className='alert alert-success mt-2'>Success! please check your email for confirmation.</div> : <></>
+            success === true ? <div className='alert alert-success mt-2'>Success! please check your email <b>{email}</b> to confirm your reservation.</div> : <></>
           }
           {
             showModal === false ? <Modal show={false}> </Modal> :
@@ -201,34 +245,36 @@ const handleModalFormSubmisson = e => {
                         <img className='img img-fluid text-center' src={carImg}></img>
                       </div>
                     </div>
-                    <div className='row'>
+                    <div className='row'>{
+                      formError === true ? <Error /> : <></>
+                    }
                       <h3>Please enter your information:</h3>
                       <div className='col-6'>
                         <p>First Name: </p>
-                        <input required className='span input-group' placeholder='first name'></input>
+                        <input onChange={updateFirstName} required className='span input-group' placeholder='first name'></input>
                       </div>
                       <div className='col-6'>
                         <p>Last Name: </p>
-                        <input required className='span input-group' placeholder='last name'></input>
+                        <input onChange={updateLastName} required className='span input-group' placeholder='last name'></input>
                       </div>
                       <div className='col-6'>
                         <p>Email: </p>
-                        <input required type='email' className='span input-group' placeholder='email'></input>
+                        <input onChange={updateEmail} required type='email' className='span input-group' placeholder='email'></input>
                       </div>
                       <div className='col-6'>
                         <p>Phone number: </p>
-                        <input required type='phone' className='span input-group' placeholder='phone number'></input>
+                        <input onChange={updatePhone} required type='phone' className='span input-group' placeholder='phone number'></input>
                       </div>
                       <div className='col-6'>
                         <p>Address: </p>
-                        <input required type='address' className='span input-group' placeholder='phone number'></input>
+                        <input onChange={updateAddress} required type='address' className='span input-group' placeholder='phone number'></input>
                       </div>
                       <div className='col-6'>
                         <p>Postal Code: </p>
-                        <input required type='phone' maxLength='7' minLength='7' className='span input-group' placeholder='A1A 1A1'></input>
+                        <input onChange={updatePostal} required type='phone' maxLength='7' minLength='7' className='span input-group' placeholder='A1A 1A1'></input>
                       </div>
                       <div className='col-12'>
-                        <button onClick={handleModalFormSubmisson} >submit</button>
+                        <button className='col-12 btn btn-primary mt-3' onClick={handleModalFormSubmisson} >submit</button>
                       </div>
                       
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
-import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Team from './components/Team';
 import Home from './components/Home';
 import About from './components/About';
@@ -8,6 +8,7 @@ import Models from './components/Models';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HomeFleet from './components/HomeFleet';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Models" element={<Models />} />
+        <Route path="/Models" element={<HomeFleet />} />
         <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Contact" element={<Contact />} />

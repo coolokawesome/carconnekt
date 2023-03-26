@@ -100,8 +100,8 @@ const handleModalFormSubmisson = e => {
         <div id='infocontainer'>
           <form onSubmit={handleSubmit}
             className='row'>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Select Your Car</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Select Your Car</p>
               <select id='car'
                 class="form-select"
                 aria-label="Select Car"
@@ -116,8 +116,8 @@ const handleModalFormSubmisson = e => {
                 <option value="Audi E-Tron">Audi E-Tron                </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Pick-Up Location</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Pick-Up Location</p>
               <select id='pickup'
                 class="form-select"
                 aria-label="Pickup location"
@@ -131,8 +131,8 @@ const handleModalFormSubmisson = e => {
                 <option value="Ottawa">Ottawa          </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Drop-Off Location</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Drop-Off Location</p>
               <select id='dropoff' class="form-select" aria-label="Drop-off location" placeholder='-- Dropoff Location --'
                 onChange={updateDropoffValue}>
                 <option value="Toronto">Toronto        </option>
@@ -143,20 +143,20 @@ const handleModalFormSubmisson = e => {
                 <option value="Ottawa">Ottawa          </option>
               </select>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Departure Date</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Departure Date</p>
               <input value={this} id='departure' type='date' class="form-select" aria-label="Departure Date" placeholder='-- Departure Date --'
                 onChange={updateDepatureValue}>
               </input>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <p className='booking-text'>Arrival Date</p>
+            <div className='col-12 col-md-6 col-lg-4 mb-3 mt-3'>
+              <p className='booking-text mb-0'>Arrival Date</p>
               <input id='arrival' type='date' class="form-select" aria-label="Arrival Date" placeholder='-- Arrival Date --'
                 onChange={updateArrivalValue}>
               </input>
             </div>
-            <div className='col-12 col-md-6 col-lg-4'>
-              <button type='submit' className='col-12  btn btn-primary book-btn'>Book Now</button>
+            <div className='col-12 col-md-6 col-lg-4 '>
+              <button type='submit' className='col-12 btn btn-primary book-btn'>Book Now</button>
             </div>
           </form>
           {

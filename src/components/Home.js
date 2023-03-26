@@ -19,7 +19,7 @@ function Home() {
       <div className='row'>
         <div className='col-12 text-center'>
           <h5>Plan your trip today</h5>
-          <h3>Fast and Effortless Rentals</h3>
+          <h3 className='display-5'>Fast and Effortless Rentals</h3>
         </div>
       </div>
       <div className='row text-center'>

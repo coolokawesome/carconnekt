@@ -59,3 +59,70 @@ h1 {
 .modal-dialog {
   overflow-x: hidden !important;
 }
+.app-container {
+  height: 50vh !important;
+  overflow: hidden;
+}
+.app-background-img {
+height: 50vh !important;
+width: auto;
+}
+.appstore-img {
+  transition-duration: 0.2s;
+}
+.appstore-img:hover {
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+  
+}
+.btn-primary {
+  background-color: #56b4d0 !important;
+  border: 2px solid #56b4d0 !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.btn-primary:hover {
+  background-color: #2b8eac !important;
+  border: 2px solid #2b8eac  !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.btn-secondary {
+  background-color: #a9babf !important;
+  border: 2px solid #aec5cd !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.btn-secondary:hover {
+  background-color: #2b8eac !important;
+  border: 2px solid #2b8eac  !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.car-btn {
+  margin: 2px !important;
+  padding: 6px !important;
+  background-color: #56b4d0 !important;
+  border: 2px solid #56b4d0 !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.car-btn:hover {
+  background-color: #2b8eac !important;
+  border: 2px solid #2b8eac  !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+.car-price {
+}
+.price-container {
+  background-color: #56b4d0;
+}
+.info-box {
+}
+.footer-container {
+
+}
+.reserve-btn {
+  font-size: larger;
+}

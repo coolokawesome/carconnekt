@@ -6,7 +6,7 @@ function WhyUs() {
     <>
     <div className='container'>
     <div className='row text-center'>
-        <div className='col-12'>
+        <div className='col-12 mt-5 mb-5'>
             <img className='img img-fluid' src={fleet}></img>
         </div>
         <div className='col-12 col-md-7 text-center text-lg-start'>

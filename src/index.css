@@ -68,6 +68,7 @@ h1 {
 .modal-dialog {
   overflow-x: hidden !important;
 }
+
 .app-container {
   height: 50vh !important;
   overflow: hidden;

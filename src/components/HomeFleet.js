@@ -45,7 +45,7 @@ function HomeFleet() {
                 <p className='col-6 text-start'>Year</p><p className='col-6 text-end'>{selectedCar.year}</p>
                 <p className='col-6 text-start'>Transmission</p><p className='col-6 text-end'>{selectedCar.transmission}</p>
                 <p className='col-6 text-start'>doors</p><p className='col-6 text-end'>{selectedCar.doors}</p>
-                <div className='col-12 '><button className='btn btn-primary px-0 mt-4 col-12 pt-2 reserve-btn pb-2' onclick='#book' >Reserve Now</button></div>
+                <div className='col-12 '><button className='btn btn-primary px-0 mt-4 col-12 pt-2 reserve-btn pb-2' on >Reserve Now</button></div>
             </div>
          </div>
         </div>

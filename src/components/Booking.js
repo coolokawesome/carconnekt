@@ -21,61 +21,19 @@ function Booking() {
   const [postal, setPostal] = useState(null)
   const [formError, setFormError] = useState(false)
 
-  const updateCarValue = e => {
-    setCarValue(
-      e.target.value
-    );
-  }
-  const updatePickupValue = e => {
-    setPickupValue(
-      e.target.value
-    );
-  }
-  const updateDropoffValue = e => {
-    setDropoffValue(
-      e.target.value
-    );
-  }
-  const updateDepatureValue = e => {
-    setDepartureValue(
-      e.target.value
-    );
-  }
-  const updateArrivalValue = e => {
-    setArrivalValue(
-      e.target.value
-    );
-  }
-  const updateFirstName = e => {
-    setFName(
-      e.target.value
-    )
-  }
-  const updateLastName = e => {
-    setLName(
-      e.target.value
-    )
-  }
-  const updatePhone = e => {
-    setPhone(
-      e.target.value
-    )
-  }
-  const updateAddress = e => {
-    setAddress(
-      e.target.value
-    )
-  }
-  const updateEmail = e => {
-    setEmail(
-      e.target.value
-    )
-  }
-  const updatePostal = e => {
-    setPostal(
-      e.target.value
-    )
-  }
+  const updateCarValue = e => setCarValue( e.target.value ); 
+  const updatePickupValue = e => setPickupValue( e.target.value ); 
+  const updateDropoffValue = e => setDropoffValue( e.target.value );
+  const updateDepatureValue = e => setDepartureValue( e.target.value );
+  const updateArrivalValue = e => setArrivalValue( e.target.value );
+
+  const updateFirstName = e => setFName( e.target.value )
+  const updateLastName = e => setLName( e.target.value )
+  const updatePhone = e => setPhone( e.target.value )
+  const updateAddress = e => setAddress( e.target.value )
+const updateEmail = e => setEmail( e.target.value )
+const updatePostal = e => setPostal( e.target.value )
+
 const handleModalFormSubmisson = e => {
   if 
   ((fname === null) || 
@@ -221,10 +179,7 @@ const handleModalFormSubmisson = e => {
             </div>
           </form>
           {
-            isError === true ?
-              <Error />
-                :
-              <></>
+            isError === true ? <Error />:<></>
           }{
             success === true ? <div className='alert alert-success mt-2'>Success! please check your email <b>{email}</b> to confirm your reservation.</div> : <></>
           }{
@@ -260,10 +215,7 @@ const handleModalFormSubmisson = e => {
                     </div>
                     <div className='row'>
                       {
-                        formError === true ? 
-                          <Error /> 
-                            : 
-                          <></>
+                        formError === true ? <Error /> : <></>
                         }
                       <h3>Please enter your information:</h3>
                       <div className='col-6 mb-3'>

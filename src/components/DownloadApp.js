@@ -6,9 +6,9 @@ import googleplay from './images/googleplay.svg'
 function DownloadApp() {
   return (
     <div className='container-fluid app-container mt-5 mb-5'>
-      <div className='row align-items-center'>
+      <div className='row align-items-center mt-5 mt-lg-1'>
         <div className='col-12 text-center col-lg-6 text-md-start '>
-          <h3>Get the most out of the Car Connekt App</h3>
+          <h3 className='display-5'>Get the <nobr className='special-text'>most</nobr> out of Car Connekt</h3>
           <p>The Car Connekt app offers an unparalleled driving experience.
             Our innovative features allow you to stay connected while on the go, keeping you safe and informed.
             Download the app today and get the most out of your driving experience.</p>

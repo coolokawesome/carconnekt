@@ -3,11 +3,13 @@
   src: url('./components/fonts/LexendDeca-VariableFont_wght.ttf');
 }
 
+@import url('https://fonts.cdnfonts.com/css/research-remix');
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(243, 243, 243);
   overflow-x: hidden;
 }
 .logo {
@@ -31,7 +33,10 @@ body {
     .app-container {
       height: 40vh !important
     }
-  
+}
+@media (min-width: 992px) {
+  .client-box {
+  }
 }
 
 .hero-container {
@@ -138,4 +143,16 @@ width: auto;
 }
 .app-container {
   background-color: rgb(245, 245, 245);
+}
+.quotes {
+  color: #56b4d0;
+  font-family: 'Research Remix', sans-serif;
+
+}
+.client-box {
+  background-color: rgb(243, 243, 243);
+  box-shadow: 1px 1px 14px rgb(165, 165, 165);
+}
+.testimonial-container {
+  background-color: #ebebeb !important;
 }

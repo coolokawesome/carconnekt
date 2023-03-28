@@ -33,11 +33,11 @@ function HomeFleet() {
                     className='car-btn col-12 text-light' id='car8'>Audi E-Tron</button>
         </div>
         <div className='col-12 col-lg-6'> 
-        <img src={selectedCar.images} className="img img-fluid"/>
+        <img src={selectedCar.images} className="img img-fluid col-10 offset-1"/>
         </div>
         <div className='col-12 col-lg-3'> 
             <div className='row text-light price-container pt-2 pb-2'>
-                <h3 id='carPrice'>$<nobr className='car-price'>{selectedCar.price}</nobr>/day</h3>
+                <h3 id='carPrice'><i class="fa-solid fa-dollar-sign pe-1"></i><nobr className='car-price'>{selectedCar.price}</nobr>/day</h3>
             </div>
             <div className='info-box row'>
                 <p className='col-6 text-start'>Make</p><p className='col-6 text-end'>{selectedCar.make}</p>
@@ -51,10 +51,10 @@ function HomeFleet() {
         </div>
         
         </div>
-        <div className='row my-5 bg-dark text-center'>
+        <div className='row mt-5 bg-dark text-center'>
                 <div className='col-12 my-5'>
                         <h2 className='text-light display-3'>Save big with Car Connekt</h2>
-                        <h4 className='text-light'>Cheapest rates. Local Suppliers. <a className='special-text'>24/7</a> support.</h4>
+                        <h4 className='text-light'>Cheapest rates. Local Suppliers. <a className='special-text'><u>24/7</u></a> support.</h4>
                 </div>
         </div>
         </>

@@ -12,45 +12,65 @@ body {
   background-color: rgb(243, 243, 243);
   overflow-x: hidden;
 }
-.logo {
 
-}
-.hero-info { 
+.logo {}
+
+.hero-info {
   margin-top: 13vh;
   margin-bottom: 0vh;
 }
+
 /*hide the image*/
 @media (max-width: 992px) {
   .hero-bg {
     height: 0px !important;
-}
+  }
+  
+
   .hero-info {
-    margin-top: 20%;  
+    margin-top: 20%;
   }
-  .app-background-img {
-    width: 0px !important
-    }
-    .app-container {
-      height: 40vh !important
-    }
+
+  .hero-container {
+    margin-top: 12vh !important;
+  }
+  
 }
-@media (min-width: 992px) {
-  .client-box {
+@media (max-width: 992px) {
+  .nav-app {
+    margin-left: 1px !important
   }
+}
+
+@media (max-width: 1199px) {
+  .hero-img {
+    height: 0px !important;
+  }
+  .hero-container {
+    margin-top: 18vh ;
+  }
+}
+.nav-container {
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .hero-container {
   height: 90vh;
   background-image: url('./components/images/HeroBg.png');
+  flex-grow: 1;
+  display: flex;
 }
+
 .booking-container {
   background-color: white;
   box-shadow: 4px 4px 15px rgb(221, 221, 221);
   margin-bottom: 10vh;
 }
+
 .book-btn {
   margin-top: 40px
 }
+
 .img {
   overflow-x: hidden !important;
 }
@@ -60,99 +80,182 @@ h1 {
   overflow-x: visible;
   font-weight: 600 !important;
 }
-.hero-img {
-  margin-top: 22vh;
-}
+
+.hero-img {}
+
 .special-text {
-  color: rgb(86, 180, 208);
+  color: #569dd0;
   text-decoration: none !important;
 }
-.display-3, .display-4, .display-5 {
+
+.display-3,
+.display-4,
+.display-5 {
   font-family: 'Lexend' !important;
 }
+
 .modal-dialog {
   overflow-x: hidden !important;
 }
 
-.app-container {
-  overflow: hidden;
-}
+
+
 .app-background-img {
-width: auto;
+  width: auto;
 }
+
 .appstore-img {
-  
+
   transition-duration: 0.2s;
 }
+
 .appstore-img:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
-  
+
 }
+
 .btn-primary {
-  background-color: #56b4d0 !important;
-  border: 2px solid #56b4d0 !important;
+  background-color: #569dd0 !important;
+  border: 2px solid #569dd0 !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+
 .btn-primary:hover {
   background-color: #2b8eac !important;
-  border: 2px solid #2b8eac  !important;
+  border: 2px solid #2b8eac !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+
 .btn-secondary {
   background-color: #a9babf !important;
   border: 2px solid #a9babf !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+
 .btn-secondary:hover {
   background-color: #2b8eac !important;
-  border: 2px solid #2b8eac  !important;
+  border: 2px solid #2b8eac !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+
 .car-btn {
   margin: 2px !important;
   padding: 6px !important;
-  background-color: #56b4d0 !important;
-  border: 2px solid #56b4d0 !important;
+  background-color: #569dd0 !important;
+  border: 2px solid #569dd0 !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+.car-btn:focus {
+  margin: 2px !important;
+  padding: 6px !important;
+  background-color: #2b8eac !important;
+  border: 2px solid #569dd0 !important;
+  border-radius: 2px !important;
+  transition-duration: 0.2s !important;
+}
+
 .car-btn:hover {
   background-color: #2b8eac !important;
-  border: 2px solid #2b8eac  !important;
+  border: 2px solid #2b8eac !important;
   border-radius: 2px !important;
   transition-duration: 0.2s !important;
 }
+
 .price-container {
-  background-color: #56b4d0;
+  background-color: #569dd0;
 }
 
 .reserve-btn {
   font-size: larger;
 }
+
 .display-5 {
   font-weight: 700;
 }
+
 .thumb-img {
   height: 10vh !important;
   width: auto !important
 }
+
 .app-container {
-  background-color: rgb(245, 245, 245);
+  background: url('./components/images/bg-app.png')
 }
-.quotes {
-  color: #56b4d0;
-  font-family: 'Research Remix', sans-serif;
+.email {
+  color: #569dd0;
+}
+
+.client-box {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 14px rgb(165, 165, 165);
+  transition-duration: 0.5s;
+}
+
+.client-box:hover {
+  transform: scale(1.02);
+  box-shadow: 6px 6px 24px rgb(172, 172, 172);
 
 }
-.client-box {
-  background-color: rgb(243, 243, 243);
-  box-shadow: 1px 1px 14px rgb(165, 165, 165);
-}
+
 .testimonial-container {
-  background-color: #ebebeb !important;
+  background: linear-gradient(0.50turn,rgb(244, 244, 244), white)
+}
+.faq-container {
+  background-color: white;
+}
+.text-info {
+  color: #569dd0 !important;
+}
+.footer-container {
+  padding-top: 20px;
+  background-color: rgb(242, 242, 242);
+}
+.plan-container {
+  background-color: white;
+}
+.nav-link {
+  color: black;
+  font-weight: 600;
+}
+.nav-link:focus {
+  color: #569dd0 
+}
+.nav-app {
+  background-color: #569dd0  ;
+  color: rgb(255, 255, 255) !important;
+  border-radius: 5px;
+  margin-left: 70px
+}
+.banner-container {
+  border-top: 2px solid #569dd023;
+  border-bottom: 2px solid #569dd029;
+  overflow: hidden;
+  height: 150px;
+}
+.banner-img {
+  width: 100vw;
+  height: auto;
+}
+.staff-img {
+  filter: brightness(90%);
+  transition-duration: 0.3s;
+
+}
+.staff-img:hover {
+  transition-duration: 0.3s;
+  filter: brightness(100%);
+  transform: translateY(-2px)
+}
+.about-thumb {
+  height: 50px;
+  width: auto;
+}
+.display-6 {
+  font-weight:400;
 }

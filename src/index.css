@@ -229,14 +229,15 @@ h1 {
 .nav-app {
   background-color: #569dd0  ;
   color: rgb(255, 255, 255) !important;
-  border-radius: 5px;
+  border-radius: 1px;
   margin-left: 70px
 }
 .banner-container {
   border-top: 2px solid #569dd023;
   border-bottom: 2px solid #569dd029;
   overflow: hidden;
-  height: 150px;
+  height: 200px;
+
 }
 .banner-img {
   width: 100vw;
@@ -258,4 +259,7 @@ h1 {
 }
 .display-6 {
   font-weight:400;
+}
+.join-container {
+  
 }

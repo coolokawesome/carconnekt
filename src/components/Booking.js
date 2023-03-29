@@ -188,9 +188,9 @@ function Booking() {
               <Modal show={true}
                 size='lg'>
                 <Modal.Header className='row modal-header'>
-                  <div className='row'>
-                    <div className='col-11'><h3>Complete your Reservation</h3></div>
-                    <button onClick={() => setShowModal(false)} className='col-1 btn btn-primary'>X</button>
+                  <div className='row align-items-center'>
+                    <div className='col-10'><h3> Reservation</h3></div>
+                    <button onClick={() => setShowModal(false)} className='col-2 btn btn-primary'>X</button>
                   </div>
                 </Modal.Header>
                 <Modal.Body>
@@ -202,15 +202,37 @@ function Booking() {
                       </div>
                     </div>
                     <div className='row'>
-                      <div className='col-12 col-lg-6 text-center text-lg-start'>
-                        <h3>Location and Date</h3>
-                        <i></i><div className='mb-4'><h5 className='col-12 '>Departure Date:</h5> {new Date(departureValue).toDateString()}</div>
-                        <i></i><div className='mb-4'><h5 className='col-12'>Arrival Date:</h5>{new Date(arrivalValue).toDateString()}</div>
-                        <i></i><div className='mb-4'><h5 className='col-12'>Pickup Location:</h5> {pickupValue}</div>
-                        <i></i><div className='mb-4'><h5 className='col-12'>Arrival Destination:</h5> {dropoffValue}</div>
+                      <div className='col-12 col-lg-6 text-center text-lg-start '><h3><b>Location and Date</b></h3>
+                        <div className='row'>
+                          <div className='col-6 col-lg-12'>
+                            <div className='mb-4'>
+                              <h5 className='col-12 '>Departure:</h5> 
+                              {new Date(departureValue).toDateString()}
+                            </div>
+                          </div>
+                          <div className='col-6 col-lg-12'>
+                            <div className='mb-4'>
+                              <h5 className='col-12 '>Arrival:</h5> 
+                              {new Date(arrivalValue).toDateString()}
+                            </div>
+                          </div>
+                          <div className='col-6 col-lg-12'>
+                            <div className='mb-4'>
+                              <h5 className='col-12 '>Pickup:</h5> 
+                              {pickupValue}
+                            </div>
+                          </div>
+                          <div className='col-6 col-lg-12'>
+                            <div className='mb-4'>
+                              <h5 className='col-12 '>Drop-Off:</h5> 
+                              {dropoffValue}
+                            </div>
+                          </div>
+                          
+                        </div>
                       </div>
                       <div className='col-12 col-lg-6'>
-                        <h3 className='text-center'>{carValue}</h3>
+                        <h3 className='text-center special-text'><b>{carValue}</b></h3>
                         <img className='img img-fluid text-center' src={carImg}></img>
                       </div>
                     </div>
@@ -218,28 +240,28 @@ function Booking() {
                       {
                         formError === true ? <Error /> : <></>
                       }
-                      <h3>Please enter your information:</h3>
-                      <div className='col-6 mb-3'>
+                      <h3 className='text-center text-md-start'><b>Please enter your information:</b></h3>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>First Name: </p>
                         <input onChange={updateFirstName} required className='span input-group form-control' placeholder='first name'></input>
                       </div>
-                      <div className='col-6 mb-3'>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>Last Name: </p>
                         <input onChange={updateLastName} required className='span input-group form-control' placeholder='last name'></input>
                       </div>
-                      <div className='col-6 mb-3'>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>Email: </p>
                         <input onChange={updateEmail} required type='email' className='span input-group form-control' placeholder='email'></input>
                       </div>
-                      <div className='col-6 mb-3'>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>Phone number: </p>
                         <input onChange={updatePhone} required type='phone' className='span input-group form-control' placeholder='phone number'></input>
                       </div>
-                      <div className='col-6 mb-3'>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>Address: </p>
                         <input onChange={updateAddress} required type='address' className='span input-group form-control' placeholder='phone number'></input>
                       </div>
-                      <div className='col-6 mb-3'>
+                      <div className='col-12 col-md-6 mb-3'>
                         <p className='my-auto'>Postal Code: </p>
                         <input onChange={updatePostal} required type='phone' maxLength='7' minLength='7' className='span input-group form-control' placeholder='A1A 1A1'></input>
                       </div>

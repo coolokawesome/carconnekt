@@ -13,18 +13,6 @@ function FAQ() {
         <div className='row col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto'>
           <div class="accordion rounded-5" id="accordion">
           <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How do I rent a car from Car Connekt?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-                <div class="accordion-body">
-                  Renting a car from Car Connekt is easy! simply fill out or web form for an email portal, or download our app, upload your documents to get approved!
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Can I rent a car without a credit card on file with Car Connekt?
@@ -38,6 +26,19 @@ function FAQ() {
                 </div>
               </div>
             </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How do I rent a car from Car Connekt?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  Renting a car from Car Connekt is easy! simply fill out or web form for an email portal, or download our app, upload your documents to get approved!
+                </div>
+              </div>
+            </div>
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">

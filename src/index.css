@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
   background-color: rgb(255, 255, 255);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .logo {}
@@ -52,7 +52,8 @@ body {
     overflow: hidden;
     }
     .brand {
-      height:0.1rem;
+      scale: 0.00001 !important;
+      height: 0px
     }
   .hero-container {
     padding-top: 18vh;
@@ -61,7 +62,8 @@ body {
   }
   .hero-container {
     background-image: url('#') !important;
-    margin-bottom: 10vh;
+    margin-top: 10vh;
+    height: 80vh !important
   }
 }
 .wrapper {

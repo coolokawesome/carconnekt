@@ -1,12 +1,18 @@
 import {useState, React} from 'react'
 import CarData from './Objects/Cars'
-
+import { useNavigate } from 'react-router-dom'
 function HomeFleet() {
     const [selectedCar, setSelectedCar] = useState(CarData[0])
 
     const configureCar = (carId) => {
         const selectedCar = CarData.find((car) => car.id === carId)
         setSelectedCar(selectedCar)
+
+    }
+    let navigate = useNavigate()
+    const routeChange = () => {
+        let path = '/Contact'
+        navigate(path)
     }
     return (
         <>
@@ -16,7 +22,7 @@ function HomeFleet() {
         <div className='row'>
         <div className='col-12 col-lg-3 '>
             <button onClick={() => configureCar(1)}
-                    className='car-btn col-12 text-light' id='car1'>Tesla Model 3</button>
+                    className='car-btn col-12 text-light btn-lg btn-md-md' id='car1'>Tesla Model 3</button>
             <button onClick={() => configureCar(2)}
                     className='car-btn col-12 text-light' id='car2'>Honda Accord</button>
             <button onClick={() => configureCar(3)}
@@ -36,8 +42,8 @@ function HomeFleet() {
         <img src={selectedCar.images} className="img img-fluid col-10 offset-1"/>
         </div>
         <div className='col-12 col-lg-3'> 
-            <div className='row text-light price-container pt-2 pb-2'>
-                <h3 id='carPrice'><i class="fa-solid fa-dollar-sign pe-1"></i><nobr className='car-price'>{selectedCar.price}</nobr>/day</h3>
+            <div className='row pt-2 pb-2'>
+                <h1 id='carPrice'><i class="fa-solid fa-dollar-sign pe-1"></i><nobr className='car-price'>{selectedCar.price}</nobr>/day</h1>
             </div>
             <div className='info-box row'>
                 <p className='col-6 text-start'>Make</p><p className='col-6 text-end'>{selectedCar.make}</p>
@@ -45,7 +51,7 @@ function HomeFleet() {
                 <p className='col-6 text-start'>Year</p><p className='col-6 text-end'>{selectedCar.year}</p>
                 <p className='col-6 text-start'>Transmission</p><p className='col-6 text-end'>{selectedCar.transmission}</p>
                 <p className='col-6 text-start'>doors</p><p className='col-6 text-end'>{selectedCar.doors}</p>
-                <div className='col-12 '><button className='btn btn-primary px-0 mt-4 col-12 pt-2 reserve-btn pb-2' on >Reserve Now</button></div>
+                <div className='col-12 '><a href='#book' ><button className='btn btn-primary px-0 mt-4 col-12 pt-2 reserve-btn pb-2' on >Reserve Now</button></a></div>
             </div>
          </div>
         </div>

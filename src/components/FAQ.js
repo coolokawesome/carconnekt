@@ -27,14 +27,14 @@ function FAQ() {
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Why is it important to compare car rentals from different companies?
+                Can I rent a car without a credit card on file with Car Connekt?
                 </button>
               </h2>
               
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                 <div class="accordion-body">
                   <p className=''>
-                    Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.</p>
+                  Car Connekt requires a valid credit card on file in order to rent a car. This is to ensure that any damages or fines incurred during the rental period can be charged to the renter.</p>
                 </div>
               </div>
             </div>
@@ -49,6 +49,18 @@ function FAQ() {
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                Is there an age limit for renting a car from Car Connekt?</button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                Yes, the minimum age requirement for renting a car from Car Connekt is 21 years old. Drivers under the age of 25 may be subject to a young driver surcharge, depending on the renter's driving abstract.
+                </div>
+              </div>
+            </div>
+            
             
           </div>
         </div>

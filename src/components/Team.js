@@ -26,7 +26,7 @@ function Team() {
           <Teamcard 
           img={face1}
           name='Nishanth Avva'
-          pos='Mechanic'
+          pos='Administration'
           />
           <Teamcard 
           img={face2}
@@ -36,7 +36,7 @@ function Team() {
           <Teamcard 
           img={face3}
           name='Jake Codrington'
-          pos='Administration'
+          pos='Lead Mechanic'
           />
 
           <Teamcard 

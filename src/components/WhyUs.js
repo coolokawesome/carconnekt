@@ -3,7 +3,13 @@ import fleet from './images/fleet.png'
 import thumb4 from './images/thumb4.png'
 import thumb5 from './images/thumb5.png'
 import thumb6 from './images/thumb6.png'
+import { useNavigate } from 'react-router-dom'
 function WhyUs() {
+    let navigate = useNavigate()
+    const routeChange = () => {
+        let path = '/Contact'
+        navigate(path)
+    }
   return (
 
     <>
@@ -15,9 +21,11 @@ function WhyUs() {
         
         <div className='col-12 col-md-6 text-center text-lg-start'>
             <h3 >Why Choose Car Connekt?</h3>
-            <h3 className='display-5'><b>The <nobr className='special-text'>best</nobr> deals you will ever find!</b></h3>
+            <h3 className='display-5'>The <nobr className='special-text'>best</nobr> deals you will ever find.</h3>
             <p>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
-            <button className='btn btn-primary'>{'Find out more >'}</button>
+
+            <button onClick={routeChange}
+             className='btn btn-primary'>{'Find out more >'}</button>
         </div>
         <div className='col-12 col-md-5 offset-md-1 text-center text-lg-start mt-5 mb-5'>
             <div className='row '>

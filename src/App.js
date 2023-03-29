@@ -37,7 +37,6 @@ function App() {
               <Nav.Link as={Link} className='px-4 px-md-2' to="/Testimonials">Testimonials</Nav.Link>
               <Nav.Link as={Link}className='px-4 px-md-2'  to="/Team">Our Team</Nav.Link>
               <Nav.Link as={Link} className='px-4 px-md-2' to="/Contact">Contact</Nav.Link>
-              <Nav.Link as={Link} className='px-4 px-md-2 nav-app' >Download App<i class="fa-solid fa-mobile ps-2"></i></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>      

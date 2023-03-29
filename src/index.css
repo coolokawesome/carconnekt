@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lexend' !important;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 255, 255);
   overflow-x: hidden;
 }
 
@@ -25,14 +25,14 @@ body {
   .hero-bg {
     height: 0px !important;
   }
-  
 
+  
   .hero-info {
     margin-top: 20%;
   }
 
   .hero-container {
-    margin-top: 12vh !important;
+    padding-top: 12vh !important;
   }
   
 }
@@ -46,19 +46,38 @@ body {
   .hero-img {
     height: 0px !important;
   }
+  .perks-container {
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden;
+    }
+    .brand {
+      height:0.1rem;
+    }
   .hero-container {
-    margin-top: 18vh ;
+    padding-top: 18vh;
+    display: flex;
+    align-items: center !important;
   }
+  .hero-container {
+    background-image: url('#') !important;
+    margin-bottom: 10vh;
+  }
+}
+.wrapper {
+  overflow-x: hidden !important;
 }
 .nav-container {
   background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .hero-container {
-  height: 90vh;
+  height: 93vh;
   background-image: url('./components/images/HeroBg.png');
-  flex-grow: 1;
-  display: flex;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .booking-container {
@@ -81,7 +100,9 @@ h1 {
   font-weight: 600 !important;
 }
 
-.hero-img {}
+.hero-img {
+  scale: 1.3;
+}
 
 .special-text {
   color: #569dd0;
@@ -210,11 +231,11 @@ h1 {
   background-color: white;
 }
 .text-info {
-  color: #569dd0 !important;
+  color: #3384be !important;
 }
 .footer-container {
   padding-top: 20px;
-  background-color: rgb(242, 242, 242);
+  background-color: #ffffff;
 }
 .plan-container {
   background-color: white;
@@ -260,6 +281,12 @@ h1 {
 .display-6 {
   font-weight:400;
 }
-.join-container {
-  
+.brand {
+  height:2rem;
+  width: auto;
+  overflow-y: hidden !important;
+}
+
+.container-hero-bottom {
+  overflow-y: hidden !important;
 }

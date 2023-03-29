@@ -25,7 +25,7 @@ function About() {
             <div className='row text-center pt-4 pb-5 mb-3'>
               <div className='col-12 col-md-6 col-lg-4'>
                 <img className='about-thumb col-12 img img-fluid  mt-4' src={thumb1}></img>
-                <h5 className='about-thumbs'>6 locations</h5>
+                <h5 className='about-thumbs'>26 locations</h5>
                 <p>We offer a large fleet of vehicles available for rent to meet your needs.</p>
               </div>
               <div className='col-12 col-md-6 col-lg-4'>

@@ -122,7 +122,9 @@ h1 {
 }
 
 
-
+.accordion-button {
+  background-color: rgb(231, 235, 245);
+}
 .app-background-img {
   width: auto;
 }
@@ -291,4 +293,20 @@ h1 {
 
 .container-hero-bottom {
   overflow-y: hidden !important;
+}
+.login-nav {
+  background-color: #569dd0;
+  color: white;
+}
+.login-nav:hover {
+  color: white;
+  background-color: #2b8eac;
+}
+.login-nav:focus {
+  color: rgb(226, 234, 251) !important
+}
+@media only screen and (max-height: 742px) {
+  .brand-container {
+    transform: translateY(-60px);
+  }
 }

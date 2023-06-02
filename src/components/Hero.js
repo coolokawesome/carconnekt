@@ -49,7 +49,7 @@ Experience Your Dream Ride with Unbeatable Prices, Unlimited kilometers, Flexibl
         </div>
       </div>
       </div>
-      <div className='container'>
+      <div className='container brand-container'>
       <div className='row justify-content-around mx-5 px-5 container-hero-bottom'>
         <img className='img img-fluid brand' src={audi}></img>
         <img className='img img-fluid brand' src={ford}></img>

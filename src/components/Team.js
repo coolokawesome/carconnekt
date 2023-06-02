@@ -14,9 +14,6 @@ import brand3 from './images/brand3.png'
 function Team() {
   return (
     <>
-    <div className='banner-container'>
-<img className='img-img-fluid banner-img' src={banner}></img>
-</div>
     <div className='container pt-3 pb-5'>
       <div className='row'>
         <div className='col'>

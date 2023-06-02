@@ -3,7 +3,7 @@ import banner from './images/carbanner.png'
 import thumb1 from './images/thumb7.png'
 import thumb2 from './images/thumb8.png'
 import thumb3 from './images/thumb9.png'
-
+import Team from './Team'
 
 function About() {
   return (
@@ -43,6 +43,7 @@ function About() {
         </div>
         
       </div>
+      <Team />
     </>
   )
 }

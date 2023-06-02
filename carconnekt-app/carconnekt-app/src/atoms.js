@@ -1,5 +1,6 @@
 import Tesla from './imgs/cars/tesla.png'
-import {RecoilRoot, atom, selector, useRecoilValue, useRecoilState} from 'recoil';
+import Honda from './imgs/cars/honda.png'
+import { atom, selector} from 'recoil';
 export const allCarsAvailable = atom(
     {
         key: "allCarsAvailable",
@@ -11,7 +12,7 @@ export const allCarsAvailable = atom(
                 year: 2022,
                 transmission: "automatic",
                 doors: 4,
-                img: './imgs/cars/tesla.png',
+                img: Tesla,
                 location:{
                     address: "33 King St. Toronto, ON",
                     distance: 0.3
@@ -24,7 +25,7 @@ export const allCarsAvailable = atom(
                 year: 2021,
                 transmission: "automatic",
                 doors: 4,
-                img: "Honda Accord",
+                img: Honda,
                 location: {
                   address: "55 Queen St. Toronto, ON",
                   distance: 0.5

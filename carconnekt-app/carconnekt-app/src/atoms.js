@@ -1,6 +1,16 @@
 import Tesla from './imgs/cars/tesla.png'
 import Honda from './imgs/cars/honda.png'
+import Jeep from './imgs/cars/jeep.png'
+import Ford from './imgs/cars/ford.png'
+import Mini from './imgs/cars/mini.png'
+import Nissan from './imgs/cars/nissan.png'
+import Volkswagen from './imgs/cars/golf.png'
+import Audi from './imgs/cars/audi.png'
+
 import { atom, selector} from 'recoil';
+
+
+
 export const allCarsAvailable = atom(
     {
         key: "allCarsAvailable",
@@ -38,7 +48,7 @@ export const allCarsAvailable = atom(
                 year: 2022,
                 transmission: "automatic",
                 doors: 4,
-                img: "Jeep Wrangler",
+                img: Jeep,
                 location: {
                   address: "77 Main St. Toronto, ON",
                   distance: 0.4
@@ -51,7 +61,7 @@ export const allCarsAvailable = atom(
                 year: 2022,
                 transmission: "automatic",
                 doors: 4,
-                img: "Ford F-350",
+                img: Ford,
                 location: {
                   address: "99 Market St. Toronto, ON",
                   distance: 0.6
@@ -64,7 +74,7 @@ export const allCarsAvailable = atom(
                 year: 2020,
                 transmission: "manual",
                 doors: 2,
-                img: "Mini Cooper S",
+                img: Mini,
                 location: {
                   address: "11 Grove St. Toronto, ON",
                   distance: 0.2
@@ -77,7 +87,7 @@ export const allCarsAvailable = atom(
             year: 2020,
             transmission: "automatic",
             doors: 4,
-            img: "Nissan Sentra",
+            img: Nissan,
             location: {
                 address: "22 Oak St. Toronto, ON",
                 distance: 0.4
@@ -90,7 +100,7 @@ export const allCarsAvailable = atom(
             year: 2022,
             transmission: "automatic",
             doors: 4,
-            img: "Volkswagen Golf",
+            img: Volkswagen,
             location: {
                 address: "44 Elm St. Toronto, ON",
                 distance: 0.7
@@ -103,7 +113,7 @@ export const allCarsAvailable = atom(
             year: 2023,
             transmission: "automatic",
             doors: 4,
-            img: "Audi Etron",
+            img: Audi,
             location: {
                 address: "66 Maple St. Toronto, ON",
                 distance: 0.9
@@ -112,7 +122,37 @@ export const allCarsAvailable = atom(
         ]
     }
 )
+export const allTrips = atom ({
+    key: "tripList",
+    default: [
+            {
+                departure: "2 April Ct. Toronto, ON",
+                arrival: "831 Blooms St. Toronto, ON"
+            },
+            {
+                departure: "831 Blooms St. Toronto, ON",
+                arrival: "2 April Ct. Toronto, ON"
+            },
+            {
+                departure: "22 Spadina Ave. Toronto, ON",
+                arrival: "831 Blooms St. Toronto, ON"
+            },
+        ]
+})
 
+export const Location = atom ({
+    key: "Location",
+    default: [
+
+]
+})
+
+export const selectAllTrips = selector(
+    {
+        key: "selectAllTrips",
+        get: ({get}) => get(tripList)
+    }
+)
 export const selectedCar = selector(
     {
         key: "selectedCar",

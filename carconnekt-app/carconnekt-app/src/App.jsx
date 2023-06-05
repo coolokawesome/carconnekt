@@ -2,6 +2,7 @@ import './App.sass'
 import CurrentCarComponent from './CurrentCar'
 import NearbyCar from './NearbyCar'
 import CurrentTrip from './CurrentTrip'
+import RecentTrips from './RecentTrips'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </div>
         <div className='col-12 col-lg-5'>
           <CurrentTrip />
+          <RecentTrips />
         </div>
       </div>
     </div>

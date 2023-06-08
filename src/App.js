@@ -36,7 +36,7 @@ function App() {
               <Nav.Link as={Link}className='px-4 px-md-2'  to="/Models">Vehicle Models</Nav.Link>
               <Nav.Link as={Link} className='px-4 px-md-2' to="/Testimonials">Testimonials</Nav.Link>
               <Nav.Link as={Link} className='px-4 px-md-2' to="/Contact">Contact</Nav.Link>
-              <Nav.Link as={Link} className='mt-3 mt-lg-0 order-first order-lg-last px-4 ps-md-4 ms-3 login-nav' to="https://google.com" target='_blank'>Log In</Nav.Link>
+              <Nav.Link as={Link} className='mt-3 mt-lg-0 order-first order-lg-last px-4 ps-md-4 ms-3 login-nav' to="https://carconnekt-app.vercel.app/" target='_blank'>Log In</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>      
